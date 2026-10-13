@@ -4,7 +4,7 @@ What runs, what it publishes, and the order in which one frame of hand motion
 becomes one joint command. Read this before changing anything structural;
 read [config-reference.md](config-reference.md) if you only need a number.
 
-The whole stack is **robot-agnostic**: no file under `teleop_pkgs/` names a
+The whole stack is **robot-agnostic**: no file in this repository names a
 link, a joint, a frame, a controller or a vendor. Everything robot-specific is
 either read at runtime from the running `move_group` or declared in one file,
 `<arm>_moveit_config/config/teleop.yaml`.

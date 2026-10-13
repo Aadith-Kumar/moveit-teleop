@@ -1,7 +1,7 @@
 # Adding an arm
 
 If the arm has a MoveIt config and a `JointTrajectoryController`, this is a
-config file and an SRDF addition. **No package under `teleop_pkgs/` should need
+config file and an SRDF addition. **No package in this repository should need
 editing** — the FR3 port is the proof. If you find yourself typing a link name
 into YAML, stop.
 
@@ -135,7 +135,7 @@ See [moveit_teleop_record/README.md](../../moveit_teleop_record/README.md).
 
 ## What you should never have to do
 
-Write a launch file, edit anything under `teleop_pkgs/`, or name a link, joint,
+Write a launch file, edit any package in this repository, or name a link, joint,
 frame, gripper joint value or joint limit in YAML.
 
 All of those are read at runtime from `robot_description` and

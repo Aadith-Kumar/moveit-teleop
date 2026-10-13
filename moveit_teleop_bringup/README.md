@@ -3,7 +3,7 @@
 Launch files and session config for the XR&nbsp;&rarr;&nbsp;MoveIt teleoperation stack.
 
 A robot is selected by **one argument**. Everything robot-specific lives in that
-robot's own MoveIt config package; nothing under `teleop_pkgs/` names a link, a
+robot's own MoveIt config package; no package in this repository names a link, a
 joint, a frame, a controller or a vendor.
 
 ```bash
@@ -81,7 +81,7 @@ effect.
 ## Tests
 
 ```bash
-cd src/teleop_pkgs/moveit_teleop_bringup && python3 -m pytest test -q
+python3 -m pytest moveit_teleop_bringup/test -q
 ```
 
 They cover resolution precedence, fallback completeness, the unknown-key
